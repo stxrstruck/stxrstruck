@@ -1,0 +1,46 @@
+
+#Header1 {
+margin-top:50px;
+}
+iframe {
+margin-bottom:50px;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+	background-color:orange;
+	}
+	nav a {
+	display:inline-block;
+	border:2px solid pink;
+	border-radius:5px;
+	}
+	body {
+	background-color:lightblue;
+	}
+#top-right-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 100px; /* Limits the maximum width */
+  width: 100px;/* Allows it to scale down if the screen is smaller than 100px */
+  height: auto;
+    margin-top: 23px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+}
+.sidebar {
+  width: 25%;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+  }
+}
